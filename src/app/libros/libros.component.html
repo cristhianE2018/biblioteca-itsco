@@ -1,1 +1,26 @@
-<p>libros works!</p>
+
+<div class="container-fluid">
+  <h2 class="text-center">Libros</h2>
+  <div></div>
+<div class="card">
+  <div class="card-body">
+    <table class="table table-sm table-bordered table-shadow">
+    <thead class="">
+      <th>Titulo</th>
+      <th>Autor</th>
+      <th>Año de publicación</th>
+      <th>Stock</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of libros">
+        <td>{{c.titulo}}</td>
+        <td>{{c.autor}}</td>
+        <td>{{c.publicacion_anio}}</td>
+        <td> {{c.stocK}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+
+

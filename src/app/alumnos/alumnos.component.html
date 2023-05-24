@@ -1,0 +1,24 @@
+
+<div class="container-fluid">
+  <h2 class="text-center">Alumnos</h2>
+  <div></div>
+<div class="card">
+  <div class="card-body">
+    <table class="table table-sm table-bordered table-shadow">
+    <thead class="">
+      <th>Nombre</th>
+      <th>Correo</th>
+      <th>Dirección</th>
+      <th>Número de control</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of alumnos">
+        <td>{{a.nombre}}</td>
+        <td>{{a.correo}}</td>
+        <td>{{a.direccion}}</td>
+        <td> {{a.numeroControl}}</td>
+        <td> <button class="btn btn-info" > prestamos  </button></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
